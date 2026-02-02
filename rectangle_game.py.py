@@ -4,7 +4,7 @@ import pyttsx3
 pygame.init()
 speaker = pyttsx3.init()
 screen = pygame.display.set_mode((1080,720))
-pygame.display.set_caption("Rectangle")
+pygame.display.set_caption("Avoid reds , complete it in 56 secs ")
 total_time = 56
 start_time = pygame.time.get_ticks()
 x=10
@@ -141,6 +141,7 @@ while run:
     pygame.display.update()
 speaker.runAndWait()
 pygame.quit()
+
 
 
 
