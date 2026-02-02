@@ -5,16 +5,24 @@ pygame.init()
 speaker = pyttsx3.init()
 screen = pygame.display.set_mode((1080,720))
 pygame.display.set_caption("Rectangle")
-
+total_time = 56
+start_time = pygame.time.get_ticks()
 x=10
 y=10
-speed = 0.2
+speed = 0.4
 
 run = True
 while run:
+    current_time = pygame.time.get_ticks()
+    elasped_time = (current_time -  start_time ) // 1000
+    time_left = total_time - elasped_time 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
+    if time_left < 0:
+        speaker.say("Time Up")
+        time.sleep(3)
+        run = False
     key = pygame.key.get_pressed()
     
     if key[pygame.K_w]:
@@ -133,8 +141,6 @@ while run:
     pygame.display.update()
 speaker.runAndWait()
 pygame.quit()
-
-
 
 
 
