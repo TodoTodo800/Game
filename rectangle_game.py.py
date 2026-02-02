@@ -51,7 +51,7 @@ while run:
     red_rect13 = pygame.draw.rect(screen,(225,0,0),(800,0,20,670))
     red_rect14 = pygame.draw.rect(screen,(225,0,0),(850,120,20,700))
     red_rect15 = pygame.draw.rect(screen,(225,0,0),(900,0,20,450))
-    red_rect16 = pygame.draw.rect(screen,(225,0,0),(945,100,20,700))
+    red_rect16 = pygame.draw.rect(screen,(225,0,0),(943,100,20,700))
     red_rect17 = pygame.draw.rect(screen,(225,0,0),(1000,0,20,680))
     green_rect = pygame.draw.rect(screen,(0,225,0),(1060,0,20,750))
     
@@ -133,6 +133,7 @@ while run:
     pygame.display.update()
 speaker.runAndWait()
 pygame.quit()
+
 
 
 
