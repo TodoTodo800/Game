@@ -2,9 +2,10 @@ import pygame
 import time
 import pyttsx3
 pygame.init()
+fps = pygame.time.Clock()
 speaker = pyttsx3.init()
 screen = pygame.display.set_mode((1080,720))
-pygame.display.set_caption("Avoid reds , complete it in 56 secs ")
+pygame.display.set_caption("Avoid Reds , complete it in 56secs ")
 total_time = 56
 start_time = pygame.time.get_ticks()
 x=10
@@ -13,6 +14,7 @@ speed = 0.4
 
 run = True
 while run:
+    fps.tick(9999)
     current_time = pygame.time.get_ticks()
     elasped_time = (current_time -  start_time ) // 1000
     time_left = total_time - elasped_time 
@@ -141,7 +143,6 @@ while run:
     pygame.display.update()
 speaker.runAndWait()
 pygame.quit()
-
 
 
 
