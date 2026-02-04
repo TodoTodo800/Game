@@ -65,74 +65,11 @@ while run:
     red_rect17 = pygame.draw.rect(screen,(225,0,0),(1000,0,20,680))
     green_rect = pygame.draw.rect(screen,(0,225,0),(1060,0,20,750))
     
-    if ball.colliderect(red_rect1):
+    if ball.colliderect(red_rect1) or   ball.colliderect(red_rect2) or ball.colliderect(red_rect3) or ball.colliderect(red_rect4) or ball.colliderect(red_rect5) or ball.colliderect(red_rect6) or ball.colliderect(red_rect7) or ball.colliderect(red_rect8) or ball.colliderect(red_rect9) or ball.colliderect(red_rect10) or ball.colliderect(red_rect11) or ball.colliderect(red_rect12) or ball.colliderect(red_rect13) or ball.colliderect(red_rect14) or ball.colliderect(red_rect15) or ball.colliderect(red_rect16) or ball.colliderect(red_rect17):
         speaker.say("GameOver")
         time.sleep(2)
         run = False
-    if ball.colliderect(red_rect2):
-        speaker.say("GameOver")
-        time.sleep(2)
-        run = False
-    if ball.colliderect(red_rect3):
-        speaker.say("GameOver")
-        time.sleep(2)
-        run = False
-    if ball.colliderect(red_rect4):
-        speaker.say("GameOver")
-        time.sleep(2)
-        run = False
-    if ball.colliderect(red_rect5):
-        speaker.say("GameOver")
-        time.sleep(2)
-        run = False
-    if ball.colliderect(red_rect6):
-        speaker.say("GameOver")
-        time.sleep(2)
-        run = False
-    if ball.colliderect(red_rect7):
-        speaker.say("GameOver")
-        time.sleep(2)
-        run = False
-    if ball.colliderect(red_rect8):
-        speaker.say("GameOver")
-        time.sleep(2)
-        run = False
-    if ball.colliderect(red_rect9):
-        speaker.say("GameOver")
-        time.sleep(2)
-        run = False
-    if ball.colliderect(red_rect10):
-        speaker.say("GameOver")
-        time.sleep(2)
-        run = False
-    if ball.colliderect(red_rect11):
-        speaker.say("GameOver")
-        time.sleep(2)
-        run = False
-    if ball.colliderect(red_rect12):
-        speaker.say("GameOver")
-        time.sleep(2)
-        run = False
-    if ball.colliderect(red_rect13):
-        speaker.say("GameOver")
-        time.sleep(2)
-        run = False
-    if ball.colliderect(red_rect14):
-        speaker.say("GameOver")
-        time.sleep(2)
-        run = False
-    if ball.colliderect(red_rect15):
-        speaker.say("GameOver")
-        time.sleep(2)
-        run = False
-    if ball.colliderect(red_rect16):
-        speaker.say("GameOver")
-        time.sleep(2)
-        run = False
-    if ball.colliderect(red_rect17):
-        speaker.say("GameOver")
-        time.sleep(2)
-        run = False
+        
     if ball.colliderect(green_rect):
         win = True
         if win:
@@ -143,7 +80,6 @@ while run:
     pygame.display.update()
 speaker.runAndWait()
 pygame.quit()
-
 
 
 
